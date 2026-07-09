@@ -34,3 +34,13 @@ The complete Data Definition Language (DDL) script is written in standard SQL an
 - Optimized data types (e.g., `TIMESTAMP`, `INT`, `FLOAT`, `VARCHAR`) tailored to business requirements.
 
 You can view, copy, or execute the complete database creation script directly in the [`cheepa_schema.sql`](./cheepa_schema.sql) file.
+
+## 📈 Business Intelligence & SQL Analytics
+
+Beyond database architecture, this project contains advanced data analysis metrics designed to evaluate Cheepá's financial and operational health. The analytical environment uses a master `VIEW` as a staging layer to calculate:
+
+- **Financial KPIs:** Aggregated Revenue, Costs, and Net Revenue trends analyzed monthly and per-order.
+- **Advanced Benchmarking:** Query models comparing individual order values against overall historical averages using complex CTEs (`WITH` clauses) and `CROSS JOIN` methods.
+- **Window Functions & Ranking:** Segmentations using `RANK()`, `DENSE_RANK()`, and `ROW_NUMBER() OVER (PARTITION BY...)` tracking purchase sequences, top customers by segment, and generating masked customer IDs (`CONCAT`).
+
+📂 You can inspect the fully documented script in [`analytics_queries.sql`](./analytics_queries.sql).
