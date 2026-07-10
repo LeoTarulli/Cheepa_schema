@@ -3,6 +3,8 @@
 ## 🗄️ Overview
 This repository contains the complete relational data infrastructure designed for **Cheepá**. The project features a highly normalized SQL database schema structured to maintain strict data integrity, manage business operations cleanly, and track transactional metrics across sales, inventory, and marketing campaigns.
 
+<img width="1089" height="627" alt="BoxPlot" src="https://github.com/LeoTarulli/Cheepa_schema/blob/main/Diagram.png"/>
+
 ---
 
 ## 📐 Relational Database Architecture
